@@ -69,3 +69,9 @@ peso: float = 88.60
 altura: float = 1.86
 imc: float = peso / (altura * altura)
 print(f"Peso: {peso} Altura: {altura} IMC = {imc:.2f}")
+
+# --------------------___----------------_________________
+# Input para pegar dados do usuário
+
+mensagem: str = input("Digite uma mensagem: ")
+print(mensagem)
