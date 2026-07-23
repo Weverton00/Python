@@ -24,7 +24,7 @@ country: str = ""
 
 def global_escope():
   global country # acessando a variável global
-  country: str = "brasil"
+  country = "brasil"
   print(country)
 
 print(country)
@@ -36,3 +36,24 @@ def mult(a: int, b: int):
 
 multiplicao = mult(5,10)
 #Passar múltiplos parâmetros def mult(*args)
+
+#Exercícios
+
+def mult_nums(*args: int):
+  total = 1
+  for num in args:
+    total *= num
+  return total
+
+mu = mult_nums(1,2,3,4,5)
+print(mu)
+
+def par_ou_impar(num: int):
+  if num % 2 == 0:
+    return f"Número {num} é par."
+  return f"Número {num} é ímpar."
+
+print(par_ou_impar(5))
+print(par_ou_impar(2))
+print(par_ou_impar(10))
+print(par_ou_impar(93))
