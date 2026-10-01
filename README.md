@@ -1,0 +1,1 @@
+# Projetos e exercícios para auxiliar nos estudo da linguagem de programação Python.
